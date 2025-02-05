@@ -17,7 +17,7 @@ The **ultimate** self-hosted DNS solution for **privacy, speed, and reliability*
 
 This stack enables a **private, fast, and resilient** DNS infrastructure in minutes.  
 **Unbound** acts as the primary resolver, with **Redis** handling caching, while **PowerDNS** and **DNSCrypt-Proxy** provide high-performance encrypted failover support.  
-Additional upstreams can be configured directly within AdGuard.
+Additional upstreams can be configured directly within AdGuard, tweak and change as you like.
 
 ## 🔗 Related Projects & Configuration
 
@@ -31,3 +31,5 @@ Additional upstreams can be configured directly within AdGuard.
 - [Redis](https://github.com/redis/redis)
 - [PowerDNS](https://github.com/PowerDNS/pdns)
 - [DNSCrypt-Proxy](https://github.com/DNSCrypt/dnscrypt-proxy)
+
+Please provide feedback for any updates or improvements !
