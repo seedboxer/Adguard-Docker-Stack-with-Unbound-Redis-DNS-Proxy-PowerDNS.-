@@ -5,7 +5,7 @@ The **ultimate** self-hosted DNS solution for **privacy, speed, and reliability*
 ## 🚀 Features & Benefits
 
 - **AdGuard**: Blocks ads, trackers, and malware at the DNS level, improving privacy and security.
-- **Docker Compose Stack**: Enables quick and effortless deployment and recovery.
+- **Docker Compose Stack**: Enables quick and effortless deployment and recovery. Always upto date containers.
 - **Unbound with Redis**: Offloads DNS caching to RAM for ultra-fast lookups.
 - **PowerDNS & DNSCrypt-Proxy**: Provides encryption, redundancy, and failover to ensure uninterrupted DNS resolution.
 - **Easy Setup**: Simply point your router’s DNS to the AdGuard instance—no extra configuration needed.
@@ -18,6 +18,13 @@ The **ultimate** self-hosted DNS solution for **privacy, speed, and reliability*
 This stack enables a **private, fast, and resilient** DNS infrastructure in minutes.  
 **Unbound** acts as the primary resolver, with **Redis** handling caching, while **PowerDNS** and **DNSCrypt-Proxy** provide high-performance encrypted failover support. (fixed IPs allocated within compose, add these to adguard as primary or failover, as your prefer)
 Additional upstreams can be configured directly within AdGuard, tweak and change as you like.
+
+## 🖥️ Easy Setup
+
+**Adguard**: Turn off all caching. Enter DNS upstream/ Bootstrap / Fallback and Private DNS server. (use internal or external as per preference)
+**Unbound**:  Edit Config/forward-records.conf and config/cachedb.conf making sure its up to date.
+**PowerDNS**: Edit recursor.yml or if you prefer use the conf.
+**DNSCrypt-Proxy**: Edit /conf/dnscrypt-proxy.toml
 
 ## 🔗 Related Projects & Configuration
 
