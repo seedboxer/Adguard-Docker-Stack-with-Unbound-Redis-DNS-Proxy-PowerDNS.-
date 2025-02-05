@@ -1,40 +1,33 @@
+# AdGuard Docker Stack
 
+The **ultimate** self-hosted DNS solution for **privacy, speed, and reliability**—featuring **AdGuard**, **Unbound**, **Redis**, **PowerDNS**, and **DNSCrypt-Proxy**. This stack provides **ad-blocking, encryption, caching, failover, and customizable DNS resolution** in a lightweight and efficient Docker setup.
 
-</head>
-<body>
-    <div class="container">
-        <h1>AdGuard Docker Stack</h1>
-        <p>The <span class="highlight">ultimate</span> self-hosted DNS solution for <strong>privacy, speed, and reliability</strong>—featuring <strong>AdGuard</strong>, <strong>Unbound</strong>, <strong>Redis</strong>, <strong>PowerDNS</strong>, and <strong>DNSCrypt-Proxy</strong>. This stack provides <strong>ad-blocking, encryption, caching, failover, and customizable DNS resolution</strong> in a lightweight and efficient Docker setup.</p>
-        
-        <h2>🚀 Features & Benefits</h2>
-        <ul>
-            <li><strong>AdGuard</strong>: Blocks ads, trackers, and malware at the DNS level, improving privacy and security.</li>
-            <li><strong>Docker Compose Stack</strong>: Enables quick and effortless deployment and recovery.</li>
-            <li><strong>Unbound with Redis</strong>: Offloads DNS caching to RAM for ultra-fast lookups.</li>
-            <li><strong>PowerDNS & DNSCrypt-Proxy</strong>: Provides encryption, redundancy, and failover to ensure uninterrupted DNS resolution.</li>
-            <li><strong>Easy Setup</strong>: Simply point your router’s DNS to the AdGuard instance—no extra configuration needed.</li>
-            <li><strong>Multi-System Deployment</strong>: Easily deploy across two or more systems for high availability and redundancy.</li>
-            <li><strong>Optimized Configuration</strong>: AdGuard’s caching is disabled to let Redis and Unbound handle it efficiently.</li>
-            <li><strong>RAM-Optimized Logging</strong>: Logs are stored in RAM to reduce disk writes (configurable via <code>docker-compose.yml</code>).</li>
-        </ul>
+## 🚀 Features & Benefits
 
-        <h2>🛠️ Quick Deployment</h2>
-        <p>This stack enables a <strong>private, fast, and resilient</strong> DNS infrastructure in minutes. <strong>Unbound</strong> acts as the primary resolver, with <strong>Redis</strong> handling caching, while <strong>PowerDNS</strong> and <strong>DNSCrypt-Proxy</strong> provide high-performance encrypted failover support. Additional upstreams can be configured directly within AdGuard.</p>
+- **AdGuard**: Blocks ads, trackers, and malware at the DNS level, improving privacy and security.
+- **Docker Compose Stack**: Enables quick and effortless deployment and recovery.
+- **Unbound with Redis**: Offloads DNS caching to RAM for ultra-fast lookups.
+- **PowerDNS & DNSCrypt-Proxy**: Provides encryption, redundancy, and failover to ensure uninterrupted DNS resolution.
+- **Easy Setup**: Simply point your router’s DNS to the AdGuard instance—no extra configuration needed.
+- **Multi-System Deployment**: Easily deploy across two or more systems for high availability and redundancy.
+- **Optimized Configuration**: AdGuard’s caching is disabled to let Redis and Unbound handle it efficiently.
+- **RAM-Optimized Logging**: Logs are stored in RAM to reduce disk writes (configurable via `docker-compose.yml`).
 
-        <h2>🔗 Related Projects & Configuration</h2>
-        <ul>
-            <li><a href="https://github.com/saint-lascivious/unbound-config" target="_blank">saint-lascivious/unbound-config</a> – Optimized Unbound configuration for privacy and performance.</li>
-            <li><a href="https://github.com/trinib/AdGuard-WireGuard-Unbound-DNScrypt" target="_blank">trinib/AdGuard-WireGuard-Unbound-DNScrypt</a> – A modular setup integrating AdGuard, WireGuard, Unbound, and DNSCrypt-Proxy.</li>
-        </ul>
+## 🛠️ Quick Deployment
 
-        <h2>📌 Learn More About the Components</h2>
-        <ul>
-            <li><a href="https://github.com/AdguardTeam/AdGuardHome" target="_blank">AdGuard Home</a></li>
-            <li><a href="https://github.com/NLnetLabs/unbound" target="_blank">Unbound</a></li>
-            <li><a href="https://github.com/redis/redis" target="_blank">Redis</a></li>
-            <li><a href="https://github.com/PowerDNS/pdns" target="_blank">PowerDNS</a></li>
-            <li><a href="https://github.com/DNSCrypt/dnscrypt-proxy" target="_blank">DNSCrypt-Proxy</a></li>
-        </ul>
-    </div>
-</body>
-</html>
+This stack enables a **private, fast, and resilient** DNS infrastructure in minutes.  
+**Unbound** acts as the primary resolver, with **Redis** handling caching, while **PowerDNS** and **DNSCrypt-Proxy** provide high-performance encrypted failover support.  
+Additional upstreams can be configured directly within AdGuard.
+
+## 🔗 Related Projects & Configuration
+
+- [saint-lascivious/unbound-config](https://github.com/saint-lascivious/unbound-config) – Optimized Unbound configuration for privacy and performance.
+- [trinib/AdGuard-WireGuard-Unbound-DNScrypt](https://github.com/trinib/AdGuard-WireGuard-Unbound-DNScrypt) – A modular setup integrating AdGuard, WireGuard, Unbound, and DNSCrypt-Proxy.
+
+## 📌 Learn More About the Components
+
+- [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome)
+- [Unbound](https://github.com/NLnetLabs/unbound)
+- [Redis](https://github.com/redis/redis)
+- [PowerDNS](https://github.com/PowerDNS/pdns)
+- [DNSCrypt-Proxy](https://github.com/DNSCrypt/dnscrypt-proxy)
