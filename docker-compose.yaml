@@ -1,0 +1,87 @@
+services:
+  adguard:
+    container_name: adguard
+    image: adguard/adguardhome:latest
+    ports:
+      - 3025:3000 # AdGuard Home web interface
+      - 53:53/udp # DNS over UDP
+      - 53:53/tcp # DNS over TCP
+    volumes:
+      - ./adguard/conf:/opt/adguardhome/conf:rw
+      - ./adguard/work:/opt/adguardhome/work:rw
+      - ./adguard/root.hints:/var/lib/unbound/root.hints
+      - /dev/shm/adguard-logs:/opt/adguardhome/log
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    environment:
+      - TZ=Europe/London
+    networks:
+      dns_network:
+        ipv4_address: 10.0.0.2
+  powerdns:
+    container_name: powerdns
+    image: powerdns/pdns-recursor-52:latest
+    ports:
+      - 5301:5301
+    environment:
+      - PDNS_LOCAL_ADDRESS=0.0.0.0:57
+    volumes:
+      - ./recursor.yml:/etc/powerdns/recursor.yml:ro
+    restart: unless-stopped
+    networks:
+      dns_network:
+        ipv4_address: 10.0.0.3
+    security_opt:
+      - no-new-privileges:true
+  dnscrypt-proxy:
+    container_name: dnscrypt-proxy
+    image: melchor9000/dnscrypt-proxy:latest
+    ports:
+      - 5353:53/udp
+    networks:
+      dns_network:
+        ipv4_address: 10.0.0.4
+    volumes:
+      - ./conf:/etc/dnscrypt-proxy
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    environment:
+      - TZ=Europe/London
+  unbound:
+    container_name: unbound
+    image: crazymax/unbound
+    depends_on:
+      - redis
+    ports:
+      - 5053:5053/udp
+    volumes:
+      - ./config:/config:ro
+    networks:
+      dns_network:
+        ipv4_address: 10.0.0.5
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=GMT
+    security_opt:
+      - no-new-privileges:true
+    restart: unless-stopped
+  redis:
+    image: redis:latest
+    container_name: redis
+    restart: unless-stopped
+    ports:
+      - 6379:6379
+    networks:
+      dns_network:
+        ipv4_address: 10.0.0.6
+networks:
+  dns_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.0.0.0/24
+  Your_external_network:
+    external: true
