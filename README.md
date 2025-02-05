@@ -4,7 +4,7 @@ The **ultimate** self-hosted DNS solution for **privacy, speed, and reliability*
 
 ## 🌠 High Performance, Private, Secure and robust
 
--2-10 msec DNS response times.
+2-10 msec DNS response times.
 
 ## 🚀 Features & Benefits
 
