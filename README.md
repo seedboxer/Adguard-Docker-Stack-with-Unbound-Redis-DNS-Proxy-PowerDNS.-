@@ -2,7 +2,9 @@
 
 The **ultimate** self-hosted DNS solution for **privacy, speed, and reliability**—featuring **AdGuard**, **Unbound**, **Redis**, **PowerDNS**, and **DNSCrypt-Proxy**. This stack provides **ad-blocking, encryption, caching, failover, and customizable DNS resolution** in a lightweight and efficient Docker setup.
 
--5-10 msec DNS response times are achievable.
+## 🌠 High Performance, Private, Secure and robust
+
+-5-10 msec DNS response times.
 
 ## 🚀 Features & Benefits
 
