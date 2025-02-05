@@ -26,6 +26,8 @@ Additional upstreams can be configured directly within AdGuard, tweak and change
 - **PowerDNS**: Edit recursor.yml or if you prefer use the conf.
 - **DNSCrypt-Proxy**: Edit /conf/dnscrypt-proxy.toml.
 
+- Use [Dns BenchMark](https://www.grc.com/dns/benchmark.htm) and/or [DnsPerf](https://www.dnsperf.com/) to edit unbound forwarders to optimize your unbound forwarders.
+
 ## 🔗 Related Projects & Configuration
 
 - [saint-lascivious/unbound-config](https://github.com/saint-lascivious/unbound-config) – Optimized Unbound configuration for privacy and performance.
