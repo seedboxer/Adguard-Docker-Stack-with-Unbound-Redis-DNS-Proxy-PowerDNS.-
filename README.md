@@ -21,10 +21,10 @@ Additional upstreams can be configured directly within AdGuard, tweak and change
 
 ## 🖥️ Easy Setup
 
-**Adguard**: Turn off all caching. Enter DNS upstream/ Bootstrap / Fallback and Private DNS server. (use internal or external as per preference).
-**Unbound**:  Edit Config/forward-records.conf and config/cachedb.conf making sure its up to date.
-**PowerDNS**: Edit recursor.yml or if you prefer use the conf.
-**DNSCrypt-Proxy**: Edit /conf/dnscrypt-proxy.toml.
+- **Adguard**: Turn off all caching. Enter DNS upstream/ Bootstrap / Fallback and Private DNS server. (use internal or external as per preference).
+- **Unbound**:  Edit Config/forward-records.conf and config/cachedb.conf making sure its up to date.
+- **PowerDNS**: Edit recursor.yml or if you prefer use the conf.
+- **DNSCrypt-Proxy**: Edit /conf/dnscrypt-proxy.toml.
 
 ## 🔗 Related Projects & Configuration
 
