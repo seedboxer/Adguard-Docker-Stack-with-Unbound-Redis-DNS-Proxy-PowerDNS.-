@@ -6,7 +6,7 @@ Use as a boiler plate for your own setup or as is.
 
 ## 🌠 High Performance, Private, Secure and robust
 
-2-10 msec DNS response times. Even on low power hardware.
+2-10 msec DNS response times. Even on low power single board hardware.
 
 ## 🚀 Features & Benefits
 
