@@ -6,7 +6,10 @@ Use as a boiler plate for your own setup or as is.
 
 ## 🌠 High Performance, Private, Secure and robust
 
-2-10 msec DNS response times. Even on low power single board hardware.
+2-10 msec DNS response times. Even on low-power single-board hardware. The example below is Raspberry PI 3B with over 200K responses.
+
+https://raw.githubusercontent.com/seedboxer/Adguard-Docker-Stack-with-Unbound-Redis-DNS-Proxy-PowerDNS.-/refs/heads/main/totaltime.JPG
+https://raw.githubusercontent.com/seedboxer/Adguard-Docker-Stack-with-Unbound-Redis-DNS-Proxy-PowerDNS.-/refs/heads/main/dnsreponse.JPG
 
 ## 🚀 Features & Benefits
 
