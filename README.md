@@ -1,4 +1,4 @@
-# // AdGuard Docker Stack // Unbound & Redis/ PowerDNS / Dnscrypt-Proxy // (Sdns adding soon)
+# // AdGuard Docker Stack // Unbound & Redis/ PowerDNS / Dnscrypt-Proxy // (Sdns testing adding soon)
 
 The **ultimate** self-hosted DNS solution for **privacy, speed, and reliability**—featuring **AdGuard**, **Unbound**, **Redis**, **PowerDNS**, and **DNSCrypt-Proxy**. This stack provides **ad-blocking, encryption, caching, failover, and customizable DNS resolution** in a lightweight and efficient Docker setup.
 
@@ -6,10 +6,10 @@ Use it as a boilerplate for your own setup or as is.
 
 ## 🌠 High Performance, Private, Secure and robust
 
-2-10 msec DNS response times. Even on low-power single-board hardware. The example below is Raspberry PI 3B with over 200K responses running on a very slow SD Card.
+2-10 msec DNS response times. Even on low-power single-board hardware. The example below is Raspberry PI 3B with over 300K responses running on a very slow SD Card.
 
-![Total Time](https://raw.githubusercontent.com/seedboxer/Adguard-Docker-Stack-with-Unbound-Redis-DNS-Proxy-PowerDNS.-/refs/heads/main/totaltime.JPG)  
-![DNS Response](https://raw.githubusercontent.com/seedboxer/Adguard-Docker-Stack-with-Unbound-Redis-DNS-Proxy-PowerDNS.-/refs/heads/main/dnsreponse.JPG)
+![Total Time](https://raw.githubusercontent.com/seedboxer/Adguard-Docker-Stack-with-Unbound-Redis-DNS-Proxy-PowerDNS.-/refs/heads/main/totaltime.png)  
+![DNS Response](https://raw.githubusercontent.com/seedboxer/Adguard-Docker-Stack-with-Unbound-Redis-DNS-Proxy-PowerDNS.-/refs/heads/main/dnsreponse.png)
 
 ## 🚀 Features & Benefits
 
